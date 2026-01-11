@@ -1,4 +1,15 @@
-"""File path handling and output directory management utilities."""
+#!/usr/bin/env python3
+"""
+## ***********************************************************************
+## file_utils.py
+## File path handling and output directory management utilities
+## Provides functions for validating file paths and managing output directories
+## Required: Standard Library (no external dependencies)
+## Copyright (c) 2025, Stephen Hawthorne
+## Created Date: 2025-01-13
+## Last Modified: 2025-01-13
+## ***********************************************************************
+"""
 
 import os
 from pathlib import Path

@@ -1,4 +1,15 @@
-"""HTML presentation to images converter tool."""
+#!/usr/bin/env python3
+"""
+## ***********************************************************************
+## html_to_images.py
+## HTML presentation to images converter tool
+## Converts HTML presentations into multiple PNG images using Playwright
+## Required: playwright, beautifulsoup4, pillow, utils modules
+## Copyright (c) 2025, Stephen Hawthorne
+## Created Date: 2025-01-13
+## Last Modified: 2025-01-13
+## ***********************************************************************
+"""
 
 import asyncio
 import re

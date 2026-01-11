@@ -1,4 +1,15 @@
-"""AI helper utilities for Hugging Face model integration."""
+#!/usr/bin/env python3
+"""
+## ***********************************************************************
+## ai_helper.py
+## AI helper utilities for Hugging Face model integration
+## Placeholder for future AI-based HTML content analysis functionality
+## Required: Standard Library (no external dependencies)
+## Copyright (c) 2025, Stephen Hawthorne
+## Created Date: 2025-01-13
+## Last Modified: 2025-01-13
+## ***********************************************************************
+"""
 
 from typing import Optional, Dict, Any
 import os

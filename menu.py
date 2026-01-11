@@ -1,4 +1,15 @@
-"""Interactive menu system for image-tools."""
+#!/usr/bin/env python3
+"""
+## ***********************************************************************
+## menu.py
+## Console menu interface for Image Tools utilities
+## Provides an interactive CLI with options to convert HTML to images and more
+## Required: Standard Library, tools.html_to_images
+## Copyright (c) 2025, Stephen Hawthorne
+## Created Date: 2025-01-13
+## Last Modified: 2025-01-13
+## ***********************************************************************
+"""
 
 import sys
 from pathlib import Path

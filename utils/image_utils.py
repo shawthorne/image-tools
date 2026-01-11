@@ -1,4 +1,15 @@
-"""Image processing helper utilities."""
+#!/usr/bin/env python3
+"""
+## ***********************************************************************
+## image_utils.py
+## Image processing helper utilities
+## Provides functions for image validation, dimension checking, and resizing
+## Required: pillow
+## Copyright (c) 2025, Stephen Hawthorne
+## Created Date: 2025-01-13
+## Last Modified: 2025-01-13
+## ***********************************************************************
+"""
 
 from pathlib import Path
 from PIL import Image

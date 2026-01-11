@@ -1,4 +1,15 @@
-"""HTML parsing and break detection logic for presentations."""
+#!/usr/bin/env python3
+"""
+## ***********************************************************************
+## html_parser.py
+## HTML parsing and break detection logic for presentations
+## Detects logical break points in HTML documents for image conversion
+## Required: beautifulsoup4
+## Copyright (c) 2025, Stephen Hawthorne
+## Created Date: 2025-01-13
+## Last Modified: 2025-01-13
+## ***********************************************************************
+"""
 
 from bs4 import BeautifulSoup
 from pathlib import Path
