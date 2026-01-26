@@ -22,7 +22,7 @@ def ensure_output_dir(output_dir: Optional[str] = None) -> Path:
     
     Args:
         output_dir: Optional custom output directory path.
-                   If None, uses 'output' in project root.
+                   If None, uses 'files/output' in project root.
     
     Returns:
         Path object for the output directory.
@@ -30,7 +30,7 @@ def ensure_output_dir(output_dir: Optional[str] = None) -> Path:
     if output_dir is None:
         # Get project root (assuming this file is in utils/)
         project_root = Path(__file__).parent.parent
-        output_dir = project_root / "output"
+        output_dir = project_root / "files" / "output"
     else:
         output_dir = Path(output_dir)
     
@@ -46,7 +46,7 @@ def get_source_dir() -> Path:
         Path object for the source directory.
     """
     project_root = Path(__file__).parent.parent
-    return project_root / "source"
+    return project_root / "files" / "source"
 
 
 def validate_file_path(file_path: str) -> Path:

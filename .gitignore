@@ -10,7 +10,7 @@ wheels/
 .venv
 
 # Output and source folders - exclude files but keep folders
-output/*
-!output/.gitkeep
-source/*
-!source/.gitkeep
+files/output/*
+!files/output/.gitkeep
+files/source/*
+!files/source/.gitkeep

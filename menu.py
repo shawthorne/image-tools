@@ -56,7 +56,7 @@ class ToolMenu:
         
         # Get input file
         print("Enter the path to your HTML file:")
-        print("  (You can use a relative path from the 'source' folder)")
+        print("  (You can use a relative path from the 'files/source' folder)")
         html_file = input("HTML file: ").strip()
         
         if not html_file:
@@ -64,7 +64,7 @@ class ToolMenu:
             return
         
         # Optional output directory
-        print("\nEnter output directory (press Enter for default 'output/'):")
+        print("\nEnter output directory (press Enter for default 'files/output/'):")
         output_dir = input("Output directory: ").strip() or None
         
         try:

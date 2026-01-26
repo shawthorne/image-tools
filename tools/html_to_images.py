@@ -240,7 +240,7 @@ class HTMLToImagesConverter:
         
         Args:
             html_file_path: Path to the HTML file.
-            output_dir: Optional output directory (defaults to project output/).
+            output_dir: Optional output directory (defaults to files/output/).
             selectors: Optional list of CSS selectors for break points.
                       If None, will auto-detect and prompt user.
         

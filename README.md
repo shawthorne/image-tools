@@ -12,12 +12,12 @@ Image Tools provides a command-line interface for converting and processing imag
 
 Converts HTML presentations (like slideshows or multi-section documents) into multiple PNG images. The tool:
 
-- **Auto-detects break points**: Intelligently identifies sections in your HTML (e.g., slides, sections, divs) that should be split into separate images
+- **Auto-detects break points**: Intelligently identifies sections in your HTML (e.g., slides, sections, divs) that should be split into separate images. Automatically detects common slide patterns (elements with class "slide", "section", "page", etc.) and finds all matching elements
 - **Interactive selection**: Prompts you to choose which elements to use as break points if multiple options are detected
 - **Full document rendering**: If no break points are found, renders the entire document as a single image
 - **Standardized output**: Automatically resizes all generated images to match the largest dimensions, ensuring consistent sizing
 - **High-quality rendering**: Uses Playwright with Chromium to render HTML with full CSS support, fonts, and images
-- **Flexible paths**: Accepts relative paths from the `source/` folder or absolute paths
+- **Flexible paths**: Accepts relative paths from the `files/source/` folder or absolute paths
 
 ## Installation
 
@@ -51,8 +51,8 @@ python tools/html_to_images.py <html_file> [output_dir]
 
 1. Launch the menu: `python menu.py`
 2. Select option `1` for "HTML Presentation to Images"
-3. Enter the path to your HTML file (relative to `source/` folder or absolute path)
-4. Optionally specify an output directory (defaults to `output/`)
+3. Enter the path to your HTML file (relative to `files/source/` folder or absolute path)
+4. Optionally specify an output directory (defaults to `files/output/`)
 5. The tool will process your HTML and generate PNG images
 
 ### Example
@@ -76,10 +76,10 @@ HTML Presentation to Images Converter
 ------------------------------------------------------------
 
 Enter the path to your HTML file:
-  (You can use a relative path from the 'source' folder)
+  (You can use a relative path from the 'files/source' folder)
 HTML file: software-roles-infographic.html
 
-Enter output directory (press Enter for default 'output/'):
+Enter output directory (press Enter for default 'files/output/'):
 Output directory: 
 
 Processing...
@@ -97,8 +97,9 @@ image-tools/
 │   ├── file_utils.py      # File path validation and output management
 │   ├── html_parser.py     # HTML parsing and break point detection
 │   └── image_utils.py     # Image processing utilities
-├── source/                # Input HTML files
-├── output/                # Generated image files
+├── files/
+│   ├── source/            # Input HTML files
+│   └── output/            # Generated image files
 └── pyproject.toml         # Project configuration
 ```
 

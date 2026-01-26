@@ -53,12 +53,15 @@ class HTMLBreakDetector:
         # Check for common slide class names
         for class_name in self.COMMON_SLIDE_CLASSES:
             elements = self.soup.find_all(class_=class_name)
-            for elem in elements:
+            if elements:
+                # Use the base class name as selector to match all elements with that class
+                # This ensures we capture all slides, not just ones with specific class combinations
+                selector = f".{class_name}"
                 breaks.append({
-                    'element': elem,
-                    'selector': self._get_selector(elem),
+                    'element': elements[0],  # Use first element as representative
+                    'selector': selector,
                     'confidence': 'high',
-                    'reason': f"Found element with class '{class_name}'"
+                    'reason': f"Found {len(elements)} element(s) with class '{class_name}'"
                 })
         
         # Check for data attributes
